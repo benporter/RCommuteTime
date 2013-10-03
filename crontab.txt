@@ -1,0 +1,7 @@
+# crontab file for running Housing_RunRepeatedly.R
+
+00 * * * *           Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+15,30,45 7-10 * * *  Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+15,30,45 16-19 * * * Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+
+# don't forget the new line character at the bottom of this file

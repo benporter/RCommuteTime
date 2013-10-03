@@ -1,8 +1,13 @@
 # crontab file for running Housing_RunRepeatedly.R
 # add this file by running the following in the shell: crontab crontab.txt
 
+# run the file every hour
 00 * * * *           Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+
+# run at the 15 min increments between 7:00 and 10:00 am
 15,30,45 7-10 * * *  Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+
+# run at the 15 min increments between 4:00 and 7:00 pm
 15,30,45 16-19 * * * Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
 
 # don't forget the new line character at the bottom of this file

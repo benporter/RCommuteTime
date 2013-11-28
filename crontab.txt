@@ -1,13 +1,22 @@
-# crontab file for running Housing_RunRepeatedly.R
-# add this file by running the following in the shell: crontab crontab.txt
+# this machine is UTC, which is -4 for EST
+# after editing this file, run: "crontab mycron" to enact changes
 
-# run the file every hour
+#* * * * *           Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
 00 * * * *           Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
 
-# run at the 15 min increments between 7:00 and 10:00 am
-15,30,45 7-10 * * *  Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+#EST version
+#15,30,45 7-10 * * *  Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+#15,30,45 16-19 * * * Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
 
-# run at the 15 min increments between 4:00 and 7:00 pm
-15,30,45 16-19 * * * Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+# UTC version
+15,30,45 11-14 * * *  Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
+15,30,45 20-23 * * *  Rscript ~/R/housing/RCommuteTime/Housing_RunRepeatedly.R
 
-# don't forget the new line character at the bottom of this file
+#tar -cvf durations<date>.tar durations*.csv
+# In the above example, the system would create a tar named file.tar in the directory you currently are in
+
+# tar -xvwzf  durations<date>.tar
+# tar -xvf durations<date>.tar
+# in the above example command the system would unarchive (untar) the myfile.tar.gz file in the current directory.
+
+#don't forget the newline character at the end of this file

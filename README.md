@@ -5,9 +5,10 @@ R Code for Pulling Travel Durations using the Bing Maps API
 
 ============
 
+Motivation for this code:
 While looking for a new place to live, my wife and I weren't sure what the traffic was like in different parts of Charlotte, NC.  We didn't want to rely on anecdotes from friends, or one off tests commutes.  Instead we wanted actual commute times so we could analyze the data ourselves.  We narrowed down our options to four neighborhoods and used the bing maps API to get the real time driving time on a regular basis.  
 
-The code in the repository is what I ran on AWS over two months, and costs $1.70 after 2 months of continually runs.  Big thanks to Loius Aslett for creating an AMI file with RStudio preinstalled.  http://www.louisaslett.com/RStudio_AMI/
+The code in the repository is what I ran on AWS EC2 over two months, and costs $1.70 after 2 months of continually runs.  Big thanks to Loius Aslett for creating an AMI file with RStudio Server preinstalled.  http://www.louisaslett.com/RStudio_AMI/
 
 ============
 

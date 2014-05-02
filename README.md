@@ -6,7 +6,8 @@ R Code for Pulling Travel Durations using the Bing Maps API
 ============
 
 See the chart for the results of this analysis:
-https://github.com/benporter/RCommuteTime/blob/master/CharlotteDrivingDurationNov15.png
+
+<img src="https://github.com/benporter/RCommuteTime/blob/master/CharlotteDrivingDurationNov15.png?raw=true" title="driving durations" alt="driving durations" />
 
 ============
 

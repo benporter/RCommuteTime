@@ -21,7 +21,7 @@ library(rjson) #To read json files
 
 getData <- function(StartLocation,WayPoint,EndLocation) {
   
-  bingkey <- "AowkQT_NrDaYfFF2OQEepSWQkk9kHy3YmLixkYpYtHW25aDU9KWxp5SoC9PN248D"
+  bingkey <- "insert key here"
   starting_point <- gsub(" ","+",StartLocation)
   WayPoint <- gsub(" ","+",StartLocation)
   end_point <- gsub(" ","+",EndLocation)
